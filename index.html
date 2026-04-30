@@ -23,6 +23,7 @@
             margin: 0;
             padding: 20px;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -31,7 +32,7 @@
             background: linear-gradient(135deg, var(--primary-brown), var(--dark-brown));
             color: var(--white);
             border-radius: 15px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
@@ -45,6 +46,37 @@
             margin: 0;
             font-size: 1.2em;
             color: var(--primary-beige);
+        }
+
+        /* قائمة الوصول السريع */
+        .fast-access {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            padding: 10px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fast-access a {
+            text-decoration: none;
+            background-color: var(--white);
+            color: var(--dark-brown);
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid var(--secondary-beige);
+            font-weight: 700;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .fast-access a:hover {
+            background-color: var(--primary-brown);
+            color: var(--white);
+            transform: translateY(-2px);
         }
 
         .container {
@@ -62,6 +94,7 @@
             overflow: hidden;
             box-shadow: 0 8px 25px rgba(139, 94, 52, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            scroll-margin-top: 20px;
         }
 
         .card:hover {
@@ -107,6 +140,7 @@
             font-size: 1em;
             color: var(--dark-brown);
             margin: 0;
+            white-space: pre-line; /* يحافظ على الفواصل في النصوص الطويلة */
         }
 
         ul.execution-list {
@@ -159,10 +193,19 @@
         <p>تفاصيل المشاريع، الأفكار، والتنفيذ الإبداعي للمجموعات</p>
     </header>
 
+    <div class="fast-access">
+        <a href="#t1">وضحى & نورة منصور</a>
+        <a href="#t2">فاطمة الشهراني</a>
+        <a href="#t3">فاطمة السلمي</a>
+        <a href="#t4">رقية عسيري</a>
+        <a href="#t5">ظافرة البيشي</a>
+        <a href="#t6">ابتسام الشهري</a>
+    </div>
+
     <div class="container">
 
         <!-- بطاقة المعلمة: وضحى -نورة منصور -->
-        <div class="card">
+        <div class="card" id="t1">
             <div class="card-header">
                 <h2>المعلمة: وضحى و نورة منصور</h2>
             </div>
@@ -182,11 +225,8 @@
                 <div class="field-group">
                     <span class="label">افكار ابداعية</span>
                     <p class="value"> مبادرة "استبدل واربح"، حيث تستبدل الطالبة العلب البلاستيكية الفارغة بنقاط أو شتلة زراعية صغيرة </p>
-
                     <p class="value"> مسابقة بين الفصول لتقليل النفايات أسبوعياً مع لوحة نتائج في ممر المدرسة​​​​​​​​​​​​​​​​</p>
                     <p class="value"> يضع كل طالب بصمة يده المطلية باللون الأخضر مكونةً شجرة ضخمة على الجدار </p>
-                  
-            
                 </div>
                 <div class="field-group">
                     <span class="label">القيم</span>
@@ -226,7 +266,7 @@
         </div>
 
         <!-- بطاقة المعلمة: فاطمة الشهراني -->
-        <div class="card">
+        <div class="card" id="t2">
             <div class="card-header">
                 <h2>المعلمة: فاطمة الشهراني</h2>
             </div>
@@ -287,7 +327,7 @@
         </div>
 
         <!-- بطاقة المعلمة: فاطمة السلمي -->
-        <div class="card">
+        <div class="card" id="t3">
             <div class="card-header">
                 <h2>المعلمة: فاطمة السلمي</h2>
             </div>
@@ -298,17 +338,14 @@
                 </div>
                 <div class="field-group">
                     <span class="label">اسم المشروع1: (المحاور الذكي) </span>
-                    <p class="value"> 
-وصف المشروع: يشترك الطلاب في تقديم ورشة تدريبية مصغرة تهدف إلى تطوير مهارات التواصل والحوار لديه
+                    <p class="value">وصف المشروع: يشترك الطلاب في تقديم ورشة تدريبية مصغرة تهدف إلى تطوير مهارات التواصل والحوار لديه
 طريقة التنفيذ: تُدعم الورشة بعروض تقديمية مناسبة وأنشطة تدريبية مبتكرة لتعزيز التفاعل وتبادل الأفكار</p>
                 </div>
                 <div class="field-group">
                     <span class="label">اسم مشروع2:(حل المشكلات... أفكارنا تِّصنع الحلول)</span>
-                     <p class="value"> 
-وصف المشروع: ينظم الطلاب ورشة تدريبية على مستوى المدرسة بعنوان (مشكلة وحل) للتعريف بمفهوم المشكلة والخطوات العلمية لحلها
+                     <p class="value">وصف المشروع: ينظم الطلاب ورشة تدريبية على مستوى المدرسة بعنوان (مشكلة وحل) للتعريف بمفهوم المشكلة والخطوات العلمية لحلها
 
 طريقة التنفيذ: تتضمن الورشة تطبيقات عمليّة على مشكلات حقيقية؛ حيث تُستضاف مجموعات من الطلاب لعرض مشكلات تواجههم (غالباً ما تكون دراسية) ومناقشة أفضل أساليب المعالجة باستخدام مهارات حل المشكلات واتخاذ القرار</p>
-                    <p class="value">  تقديم سلسلة "دقائق تطويرية" في الإذاعة المدرسية أو عبر فيديوهات قصيرة تتحدث عن الثقة بالنفس وإدارة الضغوط.</p>
                 </div>
                 <div class="field-group">
                     <span class="label">افكار ابداعية </span>
@@ -353,7 +390,7 @@
         </div>
 
         <!-- بطاقة المعلمة: رقية عسيري -->
-        <div class="card">
+        <div class="card" id="t4">
             <div class="card-header">
                 <h2>المعلمة: رقية عسيري</h2>
             </div>
@@ -415,7 +452,7 @@
         </div>
 
         <!-- بطاقة المعلمة: ظافرة البيشي -->
-        <div class="card">
+        <div class="card" id="t5">
             <div class="card-header">
                 <h2>المعلمة: ظافرة البيشي</h2>
             </div>
@@ -476,7 +513,7 @@
         </div>
 
         <!-- بطاقة المعلمة: ابتسام الشهري -->
-        <div class="card">
+        <div class="card" id="t6">
             <div class="card-header">
                 <h2>المعلمة: ابتسام الشهري</h2>
             </div>
@@ -492,13 +529,9 @@
                 <div class="field-group">
                     <span class="label">اسم مشروع2:(روبوتات المحادثة: الذكاء الذي يجيبك) </span>
                     <p class="value"> تنظيم برنامج حواري حول أحدث تطبيقات روبوتات المحادثة التي تعمل بالذكاء الاصطناعي والمقارنة بينها وقياس مدى الاعتمادية عليها</p>
-
                     
                     <span class="label">اسم مشروع3:(القواعد الذهبية في التفاعل الرقمي)</span>
                     <p class="value">  حملة توعوية منظمة تستهدف التعريف بالقواعد الأخلاقية للتعامل مع العالم الرقمي، مثل البصمة والسمعة الرقمية وعلاج الإدمان الرقمي</p>
-
-                    
-    
                 </div>
                 <div class="field-group">
                     <span class="label">الأفكار الإبداعية</span>
