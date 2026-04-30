@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاريع المعلمات - توزيع المهام والأدوار</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FDFBF7; /* بيج فاتح جداً للخلفية */
+            --primary-beige: #E6D5B8; /* بيج أساسي للبطاقات */
+            --secondary-beige: #C5A880; /* بيج داكن للحدود */
+            --primary-brown: #8B5E34; /* بني أساسي للعناوين */
+            --dark-brown: #4A331A; /* بني داكن للنصوص */
+            --text-color: #33261D; 
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-brown), var(--dark-brown));
+            color: var(--white);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            font-weight: 800;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            color: var(--primary-beige);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--primary-beige);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(139, 94, 52, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(139, 94, 52, 0.15);
+        }
+
+        .card-header {
+            background-color: var(--primary-beige);
+            color: var(--dark-brown);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--secondary-beige);
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .field-group {
+            margin-bottom: 20px;
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 10px;
+            border-right: 4px solid var(--primary-brown);
+        }
+
+        .label {
+            display: block;
+            font-weight: 800;
+            color: var(--primary-brown);
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .value {
+            font-size: 1em;
+            color: var(--dark-brown);
+            margin: 0;
+        }
+
+        ul.execution-list {
+            margin: 0;
+            padding-inline-start: 25px;
+            color: var(--dark-brown);
+        }
+
+        ul.execution-list li {
+            margin-bottom: 5px;
+        }
+
+        .students-section {
+            margin-top: 25px;
+        }
+
+        .students-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .students-table th, .students-table td {
+            border: 1px solid var(--primary-beige);
+            padding: 12px 8px;
+            font-size: 0.95em;
+        }
+
+        .students-table th {
+            background-color: var(--secondary-beige);
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .students-table tr:nth-child(even) {
+            background-color: #FCFAf5;
+        }
+        
+        .students-table tr:hover {
+            background-color: var(--primary-beige);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>سجل توزيع المهام والأدوار</h1>
+        <p>تفاصيل المشاريع، الأفكار، والتنفيذ الإبداعي للمجموعات</p>
+    </header>
+
+    <div class="container">
+
+        <!-- بطاقة المعلمة: وضحى -نورة منصور -->
+        <div class="card">
+            <div class="card-header">
+                <h2>المعلمة: وضحى - نورة منصور</h2>
+            </div>
+            <div class="card-body">
+                <div class="field-group">
+                    <span class="label">اسم المجال</span>
+                    <p class="value">مجال الاستدامة البيئية</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم المشروع 1</span>
+                    <p class="value">بالتدوير... نحمي بيئتنا ونبني الفرق: ينظم الطلاب حملة توعوية داخل المدرسة والحي تتضمن عروضاً تعريفية عن الآثار البيئية والصحية لتراكم النفايات، والتعريف بطرق تدويرها المستدام بالتعاون مع الجهات المختصة</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم مشروع 2</span>
+                    <p class="value">معاً نزرع الوعي ... لنحصد بيئة نقية: رسم جدارية توعوية عن المحافظة على البيئة، تتضمن ورشة تعريفية للطلاب عن الرسائل البيئية في الفن، وتدريبهم على تقنيات الرسم الجداري بالتعاون مع فنانين محليين</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">الفكرة</span>
+                    <p class="value">ترشيد الماء والكهرباء بالمدرسة.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">القيم</span>
+                    <p class="value">العزيمة – التعاون</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">طريقة التنفيذ الإبداعي:</span>
+                    <ul class="execution-list">
+                        <li>1.توفير حاويات مخصصة للبلاستيك والورق.</li>
+                        <li>2.التعاون مع مشتل لتوفير شتلات بسيطة.</li>
+                        <li>3.ورشة عمل "تحويل النفايات إلى فن" (Recycling Art).</li>
+                    </ul>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 1</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>تولين سامي رفاعي</td>
+                            <td>ديالا إبراهيم آل حمره</td>
+                            <td>داليا مفلح الشهراني</td>
+                            <td>تسنيم محمد الغامدي</td>
+                            <td>صبا علي القحطاني</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 2</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>ريناد ماجد ظافري</td>
+                            <td>شهد أحمد غزواني</td>
+                            <td>جوري عبدالله القحطاني</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة المعلمة: فاطمة الشهراني -->
+        <div class="card">
+            <div class="card-header">
+                <h2>المعلمة: فاطمة الشهراني</h2>
+            </div>
+            <div class="card-body">
+                <div class="field-group">
+                    <span class="label">اسم المجال</span>
+                    <p class="value">مجال التسامح والتعايش (مشروع: ملتقى الثقافات)</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم المشروع 1</span>
+                    <p class="value">قيم العدالة في المجتمع السعودي: لا للتمييز: يجري الطلاب دراسة بحثية عن جهود المملكة في محاربة العنصرية وتعزيز المساواة بما لا يتعارض مع الثوابت الإسلامية، مع رصد الجهود النظامية والتعليمية والدور الإعلامي</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم مشروع 2</span>
+                    <p class="value">نتعايش بسلام ... ونحيا بتسامح: ينظم الطلاب ندوة طلابية حول أسس ومبادئ التعايش والتسامح، تتناول محاور مثل التعايش في الإسلام، والتسامح داخل المجتمع المدرسي، والتعايش مع الاختلاف</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">الفكرة</span>
+                    <p class="value">تنظيم ركن في وقت الفسحة يمثل "خيمة الحوار"، حيث يتم عرض قصص ومواقف عن التسامح في السيرة النبوية والتاريخ السعودي.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">القيم</span>
+                    <p class="value">التسامح – التعاون</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">طريقة التنفيذ الإبداعي:</span>
+                    <ul class="execution-list">
+                        <li>1.إعداد بطاقات "ماذا تفعل لو؟" لمواقف تتطلب التسامح.</li>
+                        <li>2.توزيع "أساور التسامح" تحمل عبارات إيجابية.</li>
+                        <li>3.عمل لوحة كبيرة يوقع عليها الجميع بـ "عهد التسامح"</li>
+                    </ul>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 1</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>رباب علي خبراني</td>
+                            <td>رامة عمودي سفياني</td>
+                            <td>لمار عبدالله العمري</td>
+                            <td>جنى سلطان القحطاني</td>
+                            <td>جود أحمد بكري</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 2</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>تالا أحمد القحطاني</td>
+                            <td>عهد علي الأحمري</td>
+                            <td>ليندا عمر العمري</td>
+                            <td>رتيل حسين الشهري</td>
+                            <td>روين سلطان الشهري</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة المعلمة: فاطمة السلمي -->
+        <div class="card">
+            <div class="card-header">
+                <h2>المعلمة: فاطمة السلمي</h2>
+            </div>
+            <div class="card-body">
+                <div class="field-group">
+                    <span class="label">اسم المجال</span>
+                    <p class="value">مجال التنمية الذاتية (مشروع: بوصلة النجاح)</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم المشروع 1</span>
+                    <p class="value">غير محدد</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم مشروع 2</span>
+                    <p class="value">•الفكرة: تقديم سلسلة "دقائق تطويرية" في الإذاعة المدرسية أو عبر فيديوهات قصيرة تتحدث عن الثقة بالنفس وإدارة الضغوط.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">الفكرة</span>
+                    <p class="value">لوحة رؤية شخصية تربط القيم بالأهداف.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">القيم</span>
+                    <p class="value">العزيمة – الانضباط</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">طريقة التنفيذ الإبداعي:</span>
+                    <ul class="execution-list">
+                        <li>1.اختيار مواضيع (الثقة، الإلقاء، التخطيط).</li>
+                        <li>2.إعداد "مفكرة إنجاز" بسيطة وتوزيعها على الزميلات.</li>
+                        <li>3.استضافة المرشدة الطلابية في لقاء قصير "سؤال وجواب".</li>
+                    </ul>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 1</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>جنى ناصر الوذناني</td>
+                            <td>وسن أحمد الأحمري</td>
+                            <td>ريناد محمد المزارقه</td>
+                            <td>حور سلطان العماري</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 2</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>نوف علي آل مجري</td>
+                            <td>لمار علي الشمراني</td>
+                            <td>رويدا سعد الشهري</td>
+                            <td>نوره عبدالله الشهراني</td>
+                            <td>مزون عبدالله القحطاني</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة المعلمة: رقية عسيري -->
+        <div class="card">
+            <div class="card-header">
+                <h2>المعلمة: رقية عسيري</h2>
+            </div>
+            <div class="card-body">
+                <div class="field-group">
+                    <span class="label">اسم المجال</span>
+                    <p class="value">مجال الانتماء الوطني (مشروع: مملكة الإنسانية في عيون العالم)</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم المشروع 1</span>
+                    <p class="value">يصمم الطلاب فيديو توعوياً يتناول مفهوم الأمن الوطني وركائزه، والتعريف بمؤسساته وواجبات المواطن تجاهه، مع استعراض أهم التطبيقات الوطنية الأمنية (مثل: توكلنا، أبشر، كلنا أمن)</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم مشروع 2</span>
+                    <p class="value">•الفكرة: إنشاء "باركود" تفاعلي يوضع في ممرات المدرسة، عند مسحه يظهر فيديو أو مقال أعدته الطالبات عن معلم تاريخي سعودي.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">الفكرة</span>
+                    <p class="value">إنشاء "باركود" تفاعلي يوضع في ممرات المدرسة، عند مسحه يظهر فيديو أو مقال أعدته الطالبات عن معلم تاريخي سعودي.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">القيم</span>
+                    <p class="value">التعاون – الأمانة – الانضباط</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">طريقة التنفيذ الإبداعي:</span>
+                    <ul class="execution-list">
+                        <li>1.توزيع المعالم على الطالبات للبحث.</li>
+                        <li>2.تصوير أو جمع مادة مرئية وإنتاج فيديو قصير (دقيقة واحدة).</li>
+                        <li>3.رفع الفيديوهات على منصة وتوليد روابط QR Code.</li>
+                        <li>4.تصميم لوحات إرشادية جذابة تحمل هذه الأكواد.</li>
+                    </ul>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 1</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>جنى عبدالله الأحمري</td>
+                            <td>جنى علي غزواني</td>
+                            <td>اسيل سعيد الطوره</td>
+                            <td>لمار عامر آل يحيى</td>
+                            <td>الين علي آل مقبول</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 2</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>صالحة عثمان هزازي</td>
+                            <td>ميار عبدالعزيز آل جلده</td>
+                            <td>تبيان طارق الحاج</td>
+                            <td>جنان مبارك الشهراني</td>
+                            <td>جوري ثابت الشهراني</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة المعلمة: ظافرة البيشي -->
+        <div class="card">
+            <div class="card-header">
+                <h2>المعلمة: ظافرة البيشي</h2>
+            </div>
+            <div class="card-body">
+                <div class="field-group">
+                    <span class="label">اسم المجال</span>
+                    <p class="value">مجال الحياة الصحية (مشروع: طبقك حياتك)</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم المشروع 1</span>
+                    <p class="value">رحلة في جسم الإنسان: يشترك الطلاب في كتابة نص مسرحي وتقديمه حول الصحة الوقائية، يتناولون فيه التوعية بالوقاية من الأمراض، ودور النظافة الشخصية، والغذاء الصحي، والزيارات الدورية للطبيب</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم مشروع 2</span>
+                    <p class="value">غذاؤك.. حركتك.. تركيزك: مشروع عملي لتعزيز الوعي بالعلاقة بين الغذاء والنشاط البدني ومستوى التركيز الدراسي، يتضمن إجراء بحث ميداني وقراءة علمية وتطبيق سلوكيات صحية بديلة وتوثيق نتائجها</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">الفكرة</span>
+                    <p class="value">تحفيز النشاط البدني بقيمة الانضباط.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">القيم</span>
+                    <p class="value">الأمانة – الانضباط</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">طريقة التنفيذ الإبداعي:</span>
+                    <ul class="execution-list">
+                        <li>1.تصميم "إنفوجرافيك" يوضح كمية السكر في المشروبات الغازية.</li>
+                        <li>2.توزيع عينات من الفواكه أو المكسرات الصحية كبدائل.</li>
+                        <li>3.عمل مسابقة "أفضل وجبة فطور صحية منزلية".</li>
+                    </ul>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 1</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>جوري أحمد الشهري</td>
+                            <td>فرح علي الشهري</td>
+                            <td>وسن عبدالله فقيهي</td>
+                            <td>وسن محمد العمري</td>
+                            <td>رهف مصلح القرني</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 2</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>أمجاد ممدوح الخديدي</td>
+                            <td>رانسي ظافر الشهري</td>
+                            <td>جود سعد القحطاني</td>
+                            <td>أمل مدغم المنيعي</td>
+                            <td>رزان بندر آل شيخ</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- بطاقة المعلمة: ابتسام الشهري -->
+        <div class="card">
+            <div class="card-header">
+                <h2>المعلمة: ابتسام الشهري</h2>
+            </div>
+            <div class="card-body">
+                <div class="field-group">
+                    <span class="label">اسم المجال</span>
+                    <p class="value">مجال التفاعل الرقمي (مشروع: سفراء الأمان)</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم المشروع 1</span>
+                    <p class="value">غير محدد</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">اسم مشروع 2</span>
+                    <p class="value">•الفكرة: حملة "لا تضغط على الرابط"، لتوعية الطالبات بأساليب الاحتيال الإلكتروني وحماية الحسابات.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">الفكرة</span>
+                    <p class="value">حملة "لا تضغط على الرابط"، لتوعية الطالبات بأساليب الاحتيال الإلكتروني وحماية الحسابات.</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">القيم</span>
+                    <p class="value">غير محدد في الملف</p>
+                </div>
+                <div class="field-group">
+                    <span class="label">طريقة التنفيذ الإبداعي:</span>
+                    <ul class="execution-list">
+                        <li>1.تصميم منشورات رقمية (Snapchat/Instagram style) عن الخصوصية.</li>
+                        <li>2.عمل اختبار قصير (Quiz) "هل أنتِ آمنة رقمياً؟".</li>
+                        <li>3.توزيع ملصقات توضع على كاميرات الأجهزة المحمولة للخصوصية.</li>
+                    </ul>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 1</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>شادن عمر عبدلي</td>
+                            <td>سمو سعد القحطاني</td>
+                            <td>وداد سعد الأسمري</td>
+                            <td>رند عبدالله الشهري</td>
+                            <td>ألين علي الشهري</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="students-section">
+                    <span class="label">أسماء الطالبات المجموعة 2</span>
+                    <table class="students-table">
+                        <tr>
+                            <td>لمار سويلم القحطاني</td>
+                            <td>المى إدريس خضير</td>
+                            <td>تسنيم حسن الشهري</td>
+                            <td>ندى حازم المالكي</td>
+                            <td>درر عبدالخالق الشهري</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
